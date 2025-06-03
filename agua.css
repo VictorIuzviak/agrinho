@@ -5,14 +5,14 @@ body{
 }
 
 .cabecalho{
-    color: white;
-    background-color: black;
+    color: #f8f9fa;
+    background-color: rgb(29, 46, 83);
     text-align: center;
     padding: 30px;
 }
 
 .cabecalho h3{
-    color: rgb(206, 206, 8);
+    color: #f8f9fa;
 }
 
 p .alinha{
@@ -40,3 +40,21 @@ p .alinha{
     text-align: center;
     padding: 5px;
 }
+
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto; /* centraliza a div */
+    text-align: justify;
+    padding: 10px;  /* opcional: espaço interno */
+  }
+  
+  .container h2 {
+    text-align: center;
+  }
+  
+  .alinha {
+    font-size: 16px;
+    line-height: 1.6;
+  }

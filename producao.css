@@ -5,14 +5,14 @@ body{
 }
 
 .cabecalho{
-    color: white;
-    background-color: black;
+    color: #000000;
+    background-color: rgb(4, 63, 14);
     text-align: center;
     padding: 30px;
 }
 
 .cabecalho h3{
-    color: rgb(206, 206, 8);
+    color: #000000(206, 206, 8);
 }
 
 p .alinha{
