@@ -13,3 +13,4 @@ A estrutura de pastas do projeto inclui os arquivos HTML, uma pasta para imagens
 Este projeto visa não apenas apresentar informações sobre o campo, mas também estimular a reflexão sobre a sustentabilidade e a importância das conexões entre o rural e o urbano. É um material pensado para apoiar o aprendizado, reforçar valores de responsabilidade social e ambiental, e desenvolver habilidades em tecnologia e comunicação.
 
 O Agrinho 2025 foi desenvolvido por estudantes, com apoio de professores, como parte de um trabalho voltado para a feira de ciências e educação ambiental.
+Foi utilizado a ferramenta pixilart para montar as imagens.
