@@ -1,136 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="producao.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="producao.css">
+
+  <style>
+    .acessibilidade-btns {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 9999;
+    }
+    .acessibilidade-btns button {
+      margin-left: 5px;
+    }
+
+    body.contraste-alto {
+      background-color: black !important;
+      color: yellow !important;
+    }
+
+    body.contraste-alto h1,
+    body.contraste-alto h2,
+    body.contraste-alto h3,
+    body.contraste-alto h4,
+    body.contraste-alto h5,
+    body.contraste-alto p,
+    body.contraste-alto a,
+    body.contraste-alto li,
+    body.contraste-alto button {
+      color: yellow !important;
+      background-color: black !important;
+    }
+
+    .tamanho-aumentado {
+      font-size: 1.3em !important;
+    }
+  </style>
 </head>
 <body>
-        <!--Apresentação do tema-->
-        <section class="cabecalho">
-            <h1>AGRINHO 2025</h1>
-            <h3>Produção</h3>
-        </section>
-    
-        <!--cabeçalho do site-->
-        <nav class="navbar navbar-expand-lg bg-success">
-            <div class="container-fluid ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="producao.html">Produção</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
 
-<div class="container">
-  <div class="row pt-5">
+  <!-- Botões de acessibilidade -->
+  <div class="acessibilidade-btns">
+    <button onclick="alternarContraste()" class="btn btn-dark" aria-label="Ativar ou desativar alto contraste">Alto Contraste</button>
+    <button onclick="aumentarFonte()" class="btn btn-dark" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button onclick="diminuirFonte()" class="btn btn-dark" aria-label="Reduzir tamanho da fonte">A-</button>
+  </div>
 
-    <div class="container text-center">
-      <div class="row">
-          
-              <div class="container">
-                  <div>
-                      <h2>Produção</h2>
-                      <p class="alinha" style="font-size: 20px;">
-                        A produção no campo é a base do abastecimento alimentar e do desenvolvimento econômico.
-                        Ela envolve o cultivo de lavouras, a criação de animais e o uso de tecnologias modernas.
-                        A adoção de práticas sustentáveis garante maior produtividade e preservação ambiental.
-                        O campo bem estruturado fortalece a relação entre áreas rurais e urbanas.
-                      </p>
-                  </div>
-              </div>
-          
+  <!-- Apresentação do tema -->
+  <section class="cabecalho">
+    <h1>AGRINHO 2025</h1>
+    <h3>Produção</h3>
+  </section>
 
-          <div class="col text-center">
-             
-
-            </div>
-
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Importância da Produção Rural
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    A produção rural é essencial para garantir o abastecimento de alimentos e matérias-primas. Ela sustenta a economia de muitas regiões e contribui para a segurança alimentar da população.
-                  </div>
-                </div>
-              </div>
-            
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Sustentabilidade na Agricultura
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    O uso de práticas sustentáveis na agricultura reduz impactos ambientais e garante recursos para o futuro. Técnicas como o plantio direto e a rotação de culturas são exemplos disso.
-                  </div>
-                </div>
-              </div>
-            
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Tecnologias no Campo
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    A introdução de tecnologias, como drones e sensores, melhora a produtividade e o controle das lavouras. Isso torna o trabalho mais eficiente e rentável para os produtores.
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Espaço em branco no final da página -->
-            <div style="height: 100px;"></div>
+  <!-- Cabeçalho do site -->
+  <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="index.html">Página Inicial |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="producao.html">Produção</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <div class="container">
+    <div class="row pt-5">
+      <div class="container text-center">
+        <div class="row">
+
+          <div class="container">
+            <h2>Produção</h2>
+            <p class="alinha" style="font-size: 20px;">
+              A produção no campo é a base do abastecimento alimentar e do desenvolvimento econômico.
+              Ela envolve o cultivo de lavouras, a criação de animais e o uso de tecnologias modernas.
+              A adoção de práticas sustentáveis garante maior produtividade e preservação ambiental.
+              O campo bem estruturado fortalece a relação entre áreas rurais e urbanas.
+            </p>
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Importância da Produção Rural
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  A produção rural é essencial para garantir o abastecimento de alimentos e matérias-primas. Ela sustenta a economia de muitas regiões e contribui para a segurança alimentar da população.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Sustentabilidade na Agricultura
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  O uso de práticas sustentáveis na agricultura reduz impactos ambientais e garante recursos para o futuro. Técnicas como o plantio direto e a rotação de culturas são exemplos disso.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Tecnologias no Campo
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  A introdução de tecnologias, como drones e sensores, melhora a produtividade e o controle das lavouras. Isso torna o trabalho mais eficiente e rentável para os produtores.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Espaço em branco no final da página -->
+          <div style="height: 100px;"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
-
-
-
-
-
+  <div class="footer">
+    <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
   </div>
 
+  <!-- Script de acessibilidade -->
+  <script>
+    function alternarContraste() {
+      document.body.classList.toggle("contraste-alto");
+    }
 
+    function aumentarFonte() {
+      document.body.classList.add("tamanho-aumentado");
+    }
 
-
-</div>
-
-<div class="footer ">
-  <p>Todos os direitos reservados para agrinho 2025 - Festejando a conexão campo cidade.</p>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-  crossorigin="anonymous"></script>
+    function diminuirFonte() {
+      document.body.classList.remove("tamanho-aumentado");
+    }
+  </script>
 
 </body>
 </html>
